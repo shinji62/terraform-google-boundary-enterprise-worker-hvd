@@ -230,7 +230,7 @@ function generate_boundary_config {
   # Name is mandatory for worker KMS auth
   name = "$VM_NAME"
 %{ else ~}
-  # Auth storage backend is always required unless it's KMS AUTH
+  # Auth storage backend is always required unless it's KMS auth
   auth_storage_path = "$BOUNDARY_DIR_DATA"
 %{ endif ~}
 
