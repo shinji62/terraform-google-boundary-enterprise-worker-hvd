@@ -240,7 +240,6 @@ function generate_boundary_config {
 %{ endif ~}
   tags ${worker_tags}
 
-
 }
 
 %{ if hcp_boundary_cluster_id != "" ~}
