@@ -108,6 +108,7 @@ function scrape_vm_info {
   VM_PRIVATE_IP=$(curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/network-interfaces/0/ip)
   VM_PUBLIC_IP=$(curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip)
   VM_NAME=$(curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/name)
+  log "[INFO]" "Detected VM name is '$VM_NAME'."
   log "[INFO]" "Detected VM private IP address is '$VM_PRIVATE_IP'."
 }
 
